@@ -2,43 +2,43 @@
 <html>
 
 <head>
-    <!-- Metadados -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
     <link rel="stylesheet" href="Form.css">
 
-    <!-- Título da página (aparece na aba) -->
+
     <title>Cadastro</title>
 </head>
 
 <body>
 
-<!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+
 <div>
     <h1 id="titulo">Cadastro de Cargo</h1>
     <p id="subtitulo">Complete suas informações</p>
     <br>
 </div>
 
-<!-- Início do formulário -->
+
 <form>
 
     <fieldset class="grupo">
-        <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+
         <div class="campo">
             <label for="nickname"><strong>Nickname</strong></label>
             <input type="text" name="nickname" id="nickname" required>
         </div>
 
-        <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+
         <div class="campo">
             <label for="id"><strong>Id</strong></label>
             <input type="text" name="id" id="id" required>
         </div>
     </fieldset>
-    <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+
     <div class="campo">
         <label><strong>Qual horário preferivelmente você programa?</strong></label>
         <label>
@@ -52,10 +52,10 @@
         </label>
     </div>
 
-    <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+
     <div class="campo">
         <label for="senioridade"><strong>Nivel de experiência</strong></label>
-        <select id="senioridade" required>
+        <select name="senioridade" id="senioridade" required>
             <option selected disabled value="">Selecione</option>
             <option>Novato</option>
             <option>Experiente</option>
@@ -64,7 +64,7 @@
     </div>
 
     <fieldset class="grupo">
-        <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+
         <div id="check">
             <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
             <input type="checkbox" id="tecnologia1" name="tecnologia1" value="Developer de Bots">
@@ -84,19 +84,16 @@
         </div>
     </fieldset>
 
-    <!-- Caixa de texto -->
+
     <div class="campo">
         <br>
         <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
         <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
     </div>
 
-    <!-- Botão para enviar o formulário -->
+
     <button class="botao" type="submit" onsubmit="">Concluído</button>
 
 </form>
-
 </body>
-
 </html>
-<!-- pode fechar esse daqui -->

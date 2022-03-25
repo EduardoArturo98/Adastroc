@@ -29,7 +29,7 @@ public class PageService {
                 "</div>\n" +
                 "\n" +
                 "<!-- Início do formulário -->\n" +
-                "<form>\n" +
+                "<form action=\"/cadastro\" method=\"post\">\n" +
                 "\n" +
                 "    <fieldset class=\"grupo\">\n" +
                 "        <!-- Campo do nome com legenda \"nome\" e css de classe \"campo\" -->\n" +
@@ -61,7 +61,7 @@ public class PageService {
                 "    <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe \"campo\" -->\n" +
                 "    <div class=\"campo\">\n" +
                 "        <label for=\"senioridade\"><strong>Nivel de experiência</strong></label>\n" +
-                "        <select id=\"senioridade\" required>\n" +
+                "        <select  name=\"senioridade\" id=\"senioridade\" required>\n" +
                 "            <option selected disabled value=\"\">Selecione</option>\n" +
                 "            <option>Novato</option>\n" +
                 "            <option>Experiente</option>\n" +
@@ -98,7 +98,7 @@ public class PageService {
                 "    </div>\n" +
                 "\n" +
                 "    <!-- Botão para enviar o formulário -->\n" +
-                "    <button class=\"botao\" type=\"submit\" onsubmit=\"\">Concluído</button>\n" +
+                "    <button class=\"botao\" type=\"submit\" onsubmit=\"this.form.submit();this.disabled = true;\">Concluído</button>\n" +
                 "\n" +
                 "</form>\n" +
                 "\n" +
